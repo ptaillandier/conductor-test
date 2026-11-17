@@ -155,3 +155,21 @@ experiment TsunamiEvacuation type: gui {
 	monitor "Personnes évacuées" value: (nb_people - (person count(each.is_evacuated = false)));
 	monitor "Personnes en panique" value: (person count(each.is_panicked = true));
 }
+
+experiment TsunamiEvacuationBatch type: batch {
+	repeat 5;
+	parameter "Nombre de personnes" var: nb_people min: 100 max: 5000;
+	parameter "Temps d'alerte (min)" var: tsunami_warning_time min: 30 max: 300;
+	parameter "Vitesse évacuation (m/s)" var: evacuation_speed min: 0.5 max: 3.0;
+	parameter "Seuil de panique" var: panic_threshold min: 0.0 max: 1.0;
+	parameter "Haut-parleurs actifs" var: speakers_active;
+	parameter "Messages cellulaires envoyés" var: cellular_messages_sent;
+	parameter "Nombre de policiers" var: nb_policemen min: 0 max: 20;
+
+	output {
+		file "batch_results.csv" {
+			write "run,evacuated,panicked\n" + (run + "," + (nb_people - (person count(each.is_evacuated = false))) + "," + (person count(each.is_panicked = true)));
+		}
+	}
+}
+
