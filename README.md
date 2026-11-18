@@ -52,7 +52,24 @@ Feel free to extend the model with more realistic transmission parameters, recov
 2. Load the model `models/dengue.gaml`.
 3. Run the `dengue` experiment.
 
-Feel free to improve the model with realistic biting rates, incubation periods, or control strategies.
+Feel feel to improve the model with realistic biting rates, incubation periods, or control strategies.
+
+## fire_grid.gaml
+
+**Purpose**: Simulate the propagation of a fire on a 20 × 20 cellular grid.
+
+**Features**:
+- 400 cells (20 × 20) each with a state: *unburnt*, *burning*, *burnt*.
+- Burning cells may ignite neighboring unburnt cells with a configurable probability.
+- GUI experiment (`Fire Grid`) displays the grid (green/unburnt, red/burning, black/burnt) and a chart tracking the number of cells in each state over time.
+- Parameter to adjust the ignition probability from the interface.
+
+**How to run**:
+1. Open GAMA.
+2. Load the model `models/fire_grid.gaml`.
+3. Run the `Fire Grid` experiment.
+
+Feel free to extend the model (e.g., wind influence, different neighbourhoods, fuel loads, etc.).
 
 ## test.gaml
 
