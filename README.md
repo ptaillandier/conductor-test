@@ -35,3 +35,21 @@ Feel free to modify the model to incorporate more realistic behaviours, obstacle
 3. Run the `epidemic` experiment.
 
 Feel free to extend the model with more realistic transmission parameters, recovery, or mitigation measures.
+
+## dengue.gaml
+
+**Purpose**: Simulate the propagation of dengue fever between humans and mosquitoes.
+
+**Features**:
+- 20 human agents moving in the environment.
+- 100 mosquito agents acting as vectors.
+- 3 exits (or zones) that influence movement.
+- Basic infection dynamics: mosquitoes can infect humans and vice‑versa when they are within a given radius.
+- GUI experiment (`dengue`) to visualise the spread.
+
+**How to run**:
+1. Open GAMA.
+2. Load the model `models/dengue.gaml`.
+3. Run the `dengue` experiment.
+
+Feel free to improve the model with realistic biting rates, incubation periods, or control strategies.
