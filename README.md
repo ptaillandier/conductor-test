@@ -18,3 +18,20 @@ This repository contains GAMA models for various simulations.
 3. Run the `evacuation` experiment.
 
 Feel free to modify the model to incorporate more realistic behaviours, obstacles, or evacuation strategies.
+
+## epidemio.gaml
+
+**Purpose**: Simulate the propagation of an infectious disease among moving agents.
+
+**Features**:
+- 200 agents moving within the environment.
+- 3 exits (or zones) influencing movement.
+- Simple infection dynamics: agents become infected upon contact with infected agents.
+- GUI experiment (`epidemic`) to visualize spread.
+
+**How to run**:
+1. Open GAMA.
+2. Load the model `models/epidemio.gaml`.
+3. Run the `epidemic` experiment.
+
+Feel free to extend the model with more realistic transmission parameters, recovery, or mitigation measures.
