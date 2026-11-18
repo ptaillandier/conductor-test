@@ -53,3 +53,36 @@ Feel free to extend the model with more realistic transmission parameters, recov
 3. Run the `dengue` experiment.
 
 Feel free to improve the model with realistic biting rates, incubation periods, or control strategies.
+
+## test.gaml
+
+**Purpose**: Simple demonstration model that creates 10 dummy agents displayed as blue circles.
+
+**Features**:
+- 10 `dummy` agents positioned randomly.
+- Each agent is rendered as a circle (radius 2) with blue fill and black border.
+- GUI experiment `gui_experiment` shows the agents in a display.
+
+**How to run**:
+1. Open GAMA.
+2. Load the model `models/test.gaml`.
+3. Run the `gui_experiment` experiment.
+
+Feel free to extend this model with movement, interactions, or more complex visualisation.
+
+## trafic.gaml
+
+**Purpose**: Simulate road traffic on a single road segment.
+
+**Features**:
+- 10 car agents moving along the road.
+- 2 exits (or endpoints) influencing vehicle flow.
+- Simple car-following behavior placeholder.
+- GUI experiment (`traffic`) to visualise vehicle movement.
+
+**How to run**:
+1. Open GAMA.
+2. Load the model `models/trafic.gaml`.
+3. Run the `traffic` experiment.
+
+Feel free to enhance the model with realistic acceleration, lane‑changing, traffic lights, or congestion dynamics.
